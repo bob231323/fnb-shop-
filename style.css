@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+}
+header{
+    margin: 0px;
+    background-color: #4A154B;
+    text-align: center;
+    padding: 20px;
+}
+header > h1{
+    color: white;
+}
+
+a.header{
+   color: #CBB26A;
+    margin: 0 15px;
+    text-decoration: none;
+      font-weight: bold;
+
+}
+a:hover{
+    color: #B0B0B0;
+}
+
+footer{
+    margin: 0px;
+    background-color:  #3E2723;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items at the top */
+     padding: 40px 20px;
+    flex-wrap: wrap;
+    gap: 20px; /* Optional: adds some space between rows if it wraps on small screens */
+}
+.footer {
+    flex: 1;
+    margin: 10px;
+}
+.footer h3 {
+    margin: 0;
+    font-size: 18px;
+}
+#copyright{
+    text-align: center;
+    background-color:  #3E2723;
+    margin: 0px;
+    color: white;
+}
+.footer:first-child {
+    margin-bottom: 60px; /* Increased space below the first section */
+}
+.footer:nth-child(2) {
+    margin-bottom: 80px; /* Decreased space below the second section */
+}
+
+
+.footer {
+    flex: 1;
+    min-width: 200px; /* Prevents shrinking too much on small screens */
+    max-width: 300px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.footer a {
+    display: block;
+    margin: 4px 0;
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #B0B0B0;
+}
+
+.full-width-img {
+    /*height: 50vh;*/
+  width: 100%;
+  display: block;
+
+}
+
+.about {
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap; /* Makes it responsive */
+    background-color: #F8EDEB;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-img {
+  flex: 1;
+  max-width: 400px;
+  height: 600px;
+  border-radius: 8px;
+}
+
+.contactcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 10px;
+  /*padding: 40px;*/
+  flex-wrap: wrap; /* Makes it responsive */
+    background-color: #F8EDEB;
+}
+
+.form {
+  padding: 40px;                /* Reduced padding from 100px */
+  margin-left: 20px;            /* Optional: control space from the left */
+  background-color:  #FFF9F5;      /* Makes the form stand out */
+  border: 3px solid #4A154B;    /* Light gold frame (from your palette) */
+  border-radius: 8px;           /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  max-width: 500px;
+  flex: 1;
+    margin-left: 0;
+}
+button{
+    text-align: center;
+    align-self: center;
+    /*align-content: center;*/
+    padding: 10px;
+    background-color: #4A154B;
+    color: white;
+    border-radius: 25px;
+}
+
+input , textarea {
+  width: 100%;         /* Makes the input fill the parent container */
+  padding: 12px 15px;  /* Inner spacing */
+  font-size: 16px;     /* Text size */
+  border: 2px solid #3E2723;
+  border-radius: 6px;
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
+  margin-bottom: 20px;
+    background-color: #FFF9F5;
+
+}
+
+/* Optional: Adjust height of textarea */
+textarea {
+  height: 150px; /* You can make it taller if you like */
+  resize: vertical; /* Allows the user to resize it vertically */
+
+}
+
+
+.home-section {
+  background-image: url('assets/images/back.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
+
+.homecontent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.home-product{
+    background-color: #F8EDEB ;
+
+ display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap; /* Makes it responsive */
+
+
+}
+.product-img{
+    width: 200px;
+    height:200px;
+}
+.line{
+    background-color: #F8EDEB ;
+    text-align: center;
+    margin: 0;
+}
+ .product {
+      display: none;
+      width: 250px;
+      background-color: #fff0f0;
+      padding: 15px;
+
+      text-align: center;
+
+      transition: transform 0.2s ease;
+
+
+
+
+
+
+ border: 3px solid #4A154B;    /* Light gold frame (from your palette) */
+  border-radius: 8px;           /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  max-width:225px;
+    min-width: 225px;
+    /*max-height: 6000px;*/
+  flex: 1;
+}
+
+.product button {
+      padding: 8px 15px;
+      background-color: #4A154B;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+
+
+
+     margin-top: auto;
+  margin-bottom: 0.5rem; /* Adds some breathing room from the border */
+  /*padding: 10px 20px;*/
+
+
+
+
+    }
+ .product button:hover {
+      background-color: darkblue;
+    }
+ .product:hover {
+      transform: scale(1.03);
+    }
+
+.product img {
+    width: 100%;
+    height: 60%;
+    /*height: 160px;*/
+    object-fit: cover;
+    border-radius: 8px;
+}
+#categories{
+    margin: 0px;
+    background-color:  #4A154B;
+    text-align: center;
+    padding: 20px;
+}
+.categories{
+    background-color:  #3E2723;
+    /*padding: 20px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 20px;
+    border-radius: 10px;
+}
+ .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+.home-product input[type="radio"] {
+      display: none;
+    }
+  /* Highlight the selected button */
+    #all:checked ~ .filter-wrapper label[for="all"],
+    #beverages:checked ~ .filter-wrapper label[for="beverages"],
+    #pantry:checked ~ .filter-wrapper label[for="pantry"],
+    #pasta:checked ~ .filter-wrapper label[for="pasta"],
+    #bakery:checked ~ .filter-wrapper label[for="bakery"] ,
+    #dairy:checked ~ .filter-wrapper label[for="dairy"]
+    {
+      background-color: #4A154B;
+      color: white;
+    }
+
+
+
+
+/* Style labels like buttons */
+.filter-wrapper label {
+  background: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.3s;
+}
+
+/* Highlight the selected button */
+#all:checked ~ label[for="all"],
+#beverages:checked ~ label[for="beverages"],
+#bakery:checked ~ label[for="bakery"],
+#pantry:checked ~ label[for="pantry"],
+#dairy:checked ~ label[for="dairy"] ,
+#pasta:checked ~ label[for="pasta"]
+/*, #juice:checked ~ label[for="juice"]*/
+{
+  background: darkblue;
+  color: white;
+}
+
+
+
+
+
+/* Show content based on selected category */
+#all:checked ~ .content .product.all,
+#beverages:checked ~ .content .product.beverages,
+#bakery:checked ~ .content .product.bakery,
+#pantry:checked ~ .content .product.pantry,
+#dairy:checked ~ .content .product.dairy ,
+#pasta:checked ~ .content .product.pasta{
+  display: block;
+}
+
+.inline{
+    display: flex;
+  gap: 15px; /* optional: space between icons */
+  align-items: center; /* vertically align if needed */
+}
+#button > button{
+    font-size: 20px;
+    padding: 10px 15px;
+}
+#button{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+#location{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #B0B0B0; /* Highlight color, adjust as needed */
+}
+.head{
+    /*color: darkblue;*/
+    /*color: #3E2723;*/
+    /*color: saddlebrown;*/
+    /*color: rosybrown;*/
+
+
+    background-color: #F8EDEB;
+    margin: 0;
+    margin-top: 1px;
+    padding: 10px;
+}
+.contact-us{
+    display: initial;
+     justify-content: space-between;
+    padding: 0;
+}
+.calender {
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+    padding-left: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px; /* Space between items */
+}
+
+.contact-item i {
+
+    margin-right: 10px; /* Space between icon and text */
+    color: #4A154B; /* Icon color */
+
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-product .content { flex-direction: column; align-items: center; }
+  .product-img { width: 100%; height: auto; max-width: 250px; }
+  .about-container, .contactcontainer { flex-direction: column; }
+}
+.price{
+    color: #002B5B;
+    text-decoration-color: #002B5B;
+    font-size: 18px;
+
+
+}
+
+/*.product {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-between;*/
+
+/*  width: 250px;*/
+/*  height: 450px;  !* Fixed height ensures space for bottom alignment *!*/
+
+/*  background-color: #fff0f0;*/
+/*  padding: 15px;*/
+/*  text-align: center;*/
+
+/*  border: 3px solid #4A154B;*/
+/*  border-radius: 8px;*/
+/*  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+/*  transition: transform 0.2s ease;*/
+
+/*  position: relative;*/
+/*}*/
+/*.product button {*/
+/*  margin-top: auto;*/
+/*  padding: 12px 20px;*/
+
+/*  background-color: #4A154B;*/
+/*  color: white;*/
+/*  border: none;*/
+/*  border-radius: 20px;*/
+/*  cursor: pointer;*/
+/*}*/
+
+

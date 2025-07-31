@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Foodify's complete food and beverage product catalog.">
+    <title>Foodify_products</title>
+     <link  rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+ <header>
+        <h1>Foodify</h1>
+        <nav>
+        <a class="header" href="index.html">Home</a>
+        <a class="header active" href="products.html">Products</a>
+        <a class = "header" href="about.html">About     </a>
+        <a class = "header" href="contact.html">Contact     </a>
+        </nav>
+ </header>
+<main>
+  <section class="home-product">
+    <h2>Our Products</h2>
+
+    <!-- Radio inputs must be BEFORE .content to work with ~ selector -->
+    <input type="radio" name="category" id="all" checked>
+    <input type="radio" name="category" id="beverages">
+    <input type="radio" name="category" id="pantry">
+    <input type="radio" name="category" id="pasta">
+      <input type="radio" name="category" id="dairy">
+    <input type="radio" name="category" id="bakery">
+
+
+    <div class="filter-wrapper">
+      <label for="all">All</label>
+      <label for="beverages">Beverages</label>
+      <label for="pantry">Pantry</label>
+      <label for="pasta">Pasta</label>
+        <label for="dairy">Diary</label>
+      <label for="bakery">Bakery</label>
+
+    </div>
+
+<div class="content">
+    <div class="product all beverages">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/coffee.jpg" alt="Organic Coffee Blend">
+        <h4>Organic Coffee Blend</h4>
+        <p class="price"> 100 EGP</p>
+        <p>A smooth, rich blend of organic coffee beans with notes of chocolate and caramel.</p>
+<!-- </div>-->
+        <button>add to cart</button>
+    </div>
+    <div class="product all pantry">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/honey.jpg" alt="Premium Honey Collection">
+        <h4>Premium Honey Collection</h4>
+        <p class="price"> 400 EGP</p>
+        <p>Pure, raw honey harvested from sustainable apiaries, perfect for tea, baking, or straight from the jar.</p>
+<!-- </div>-->
+         <button>add to cart</button>
+    </div>
+    <div class="product all pasta">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/cheesy%20pasta.jpg" alt="Cheesy Pasta">
+        <h4>Cheesy Pasta</h4>
+        <p class="price"> 200 EGP</p>
+        <p>Creamy, gooey, and loaded with melted cheese — this comforting pasta dish is every cheese lover’s dream in a bowl.</p>
+<!-- </div>-->
+         <button>add to cart</button>
+</div>
+     <div class="product all pasta">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/Lazanya.jpg" alt="lazanya Pasta">
+        <h4>Lazanya</h4>
+         <p class="price"> 200 EGP</p>
+        <p>A rich and hearty Italian classic layered with sheets of pasta, slow-cooked meat sauce, creamy béchamel, and melted mozzarella — baked to perfection.</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+     <div class="product all pasta">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/red-pasta.jpg" alt="Pasta with Red Sauce">
+         <h4>Pasta with Red Sauce</h4>
+         <p class="price"> 200 EGP</p>
+<p>Al dente pasta tossed in a vibrant tomato-based sauce infused with garlic, herbs, and a hint of chili for a bold Italian flavor</p>
+<!-- </div>-->
+          <button>add to cart</button>
+
+    </div>
+
+     <div class="product all pasta">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/white-pasta.jpg" alt=" Pasta with White Sauce">
+        <h4> Pasta with White Sauce</h4>
+         <p class="price"> 200 EGP</p>
+        <p>Smooth and creamy Alfredo-style sauce made with butter, cream, and parmesan — a luscious pairing for your favorite pasta.</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+     <div class="product all dairy">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/cheese.jpg" alt="Cheese">
+        <h4>Cheese</h4>
+         <p class="price"> 400 EGP</p>
+        <p>A curated selection of handcrafted cheeses from small-batch producers around the world.</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+     <div class="product all pasta">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/green-pasta.jpg" alt="Pesto Pasta">
+        <h4>Pseto Pasta</h4>
+         <p class="price"> 250 EGP</p>
+        <p>Fresh basil pesto blended with garlic, olive oil, pine nuts, and parmesan, coating every bite of pasta in aromatic green goodness.</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+     <div class="product all bakery">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/bread.jpg" alt="Cheesy Pasta">
+        <h4>bread</h4>
+         <p class="price"> 50 EGP</p>
+        <p>Handcrafted sourdough bread made with traditional fermentation methods and organic flour</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+     <div class="product all beverages">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/lemon.jpg" alt=" Lemon & Ginger Juice">
+        <h4> Lemon & Ginger Juice</h4>
+         <p class="price"> 100 EGP</p>
+        <p>A refreshing detox blend of zesty lemon and spicy ginger — perfect for boosting immunity and energizing your day.</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+     <div class="product all beverages">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/apple.jpg" alt="Apple, Lemon, Celery, Avocado & Arugula Juice">
+        <h4>Apple, Lemon, Celery, Avocado & Arugula Juice</h4>
+         <p class="price"> 150 EGP</p>
+        <p>A green powerhouse blend — crisp apple, detoxifying celery, creamy avocado, peppery arugula, and a splash of lemon for a clean, energizing sip.
+
+</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+     <div class="product all beverages">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/orange.jpg" alt=" Orange, Lemon & Ginger Juice">
+        <h4> Orange, Lemon & Ginger Juice</h4>
+         <p class="price"> 100 EGP</p>
+        <p>A bright and tangy citrus mix with a ginger kick — rich in Vitamin C and full of flavor.</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+     <div class="product all beverages">
+<!-- <div class="product-content">-->
+        <img class="product-img" src="assets/images/carrot.jpg" alt=" Orange, Carrot & Ginger Juice">
+        <h4> Orange, Carrot & Ginger Juice</h4>
+         <p class="price"> 100 EGP</p>
+        <p>A naturally sweet and earthy combo that supports eye health and digestion — balanced with a hint of ginger spice.</p>
+<!-- </div>-->
+          <button>add to cart</button>
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <h3>
+                Foodify
+            </h3>
+            <p>Food is not just nourishment - it’s an experience of joy, comfort, and connection.</p>
+        </div>
+        <div class="footer">
+            <h3 class="center">
+                Quick links
+            </h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer">
+            <h3 class="right">
+                Contact us
+            </h3>
+            <p>cairo, Egypt</p>
+            <p>Phone: 0111000000</p>
+            <p>Email: habebah296@gmail.com</p>
+             <div class="inline">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+    <p id="copyright">&copy; 2025 Foodify. All rights reserved.</p>
+</body>
+
+</html>
