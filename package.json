@@ -1,0 +1,10 @@
+{
+  "name": "fnb-shop",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "heroku-serve"
+  },
+  "dependencies": {
+    "heroku-serve": "^1.0.0"
+  }
+}
